@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_cpu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140sp"
+        android:background="#0E0D0D"
+        android:src="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/iv_me"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_cpu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:background="#121111"
+        android:src="@drawable/rock" />
+
+    <Button
+        android:id="@+id/b_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_me"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="  Rock  "
+        android:textColor="#E4DDDD"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:iconSize="18dp" />
+
+    <Button
+        android:id="@+id/b_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_me"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="  Paper  "
+        android:textColor="#EAE4E4"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/b_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_rock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="  Scissors  "
+        android:textColor="#F1EEEE"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_scissors"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#000000"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="  Score : Me 0  CPU 0    "
+        android:textColor="#EDE8E8"
+        android:textColorHint="#D57676"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="45sp"
+        android:background="#000000"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="  Welcome to Rock Paper Scissors  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#F3F3F6"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
